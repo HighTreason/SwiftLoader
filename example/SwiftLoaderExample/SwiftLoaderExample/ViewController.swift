@@ -28,9 +28,9 @@ class ViewController: UIViewController {
     func addButton() {
         let size : CGFloat = 200.0
         let actionButton = UIButton(frame: CGRect(x: (self.view.frame.width - size) / 2, y: size, width: size, height: size))
-        actionButton.setTitleColor(UIColor(red:0.52, green:0.07, blue:0.72, alpha:1), for: UIControlState())
-        actionButton.addTarget(self, action: #selector(ViewController.actionShowLoader), for: UIControlEvents.touchUpInside)
-        actionButton.setTitle("Show loader", for: UIControlState())
+        actionButton.setTitleColor(UIColor(red:0.52, green:0.07, blue:0.72, alpha:1), for: UIControl.State())
+        actionButton.addTarget(self, action: #selector(ViewController.actionShowLoader), for: UIControl.Event.touchUpInside)
+        actionButton.setTitle("Show loader", for: UIControl.State())
         self.view.addSubview(actionButton)
     }
     
